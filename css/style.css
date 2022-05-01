@@ -157,7 +157,7 @@ body{
 .site-content{
     width:100%;
     height:100%;
-    overflow-x:auto;
+    overflow-x:hidden;
 }
 
   header.topbar{
@@ -514,6 +514,9 @@ section{
 }
 .about h4{
     line-height: 80px;
+}
+.about .about_img{
+    padding-top: 50px;
 }
 
 /****************** Service Section *******************/
