@@ -1,0 +1,110 @@
+.aside{
+    padding-top: 90px;
+    padding-bottom: 50px;
+}
+ .aside h1{
+    font-size:30px;
+    font-weight: bolder;
+    text-align:left;
+    color:red;
+    letter-spacing: 1px;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.9);
+    padding: 0 20px 10px 0px;
+  }
+  .aside .nav-container {
+    width: 300px;
+    box-shadow: 0 15px 45px rgba(0,0,0,.1);
+    transition: all 0.5s linear;
+  }
+  .aside .service_img{
+      width: 730px;
+      height: 355px;
+      padding-bottom: 20px;
+  }
+  .aside .nav {
+    list-style-type: none;
+    margin:0;
+    padding:0;
+    display: flex;
+    flex-direction: column;
+  }
+  .aside li{
+    height: 50px;
+    position:relative;
+    background:var(--heaven);
+  }
+  .aside a {
+    border-top: 1px solid rgba(255,255,255,0.1);
+    border-bottom: 1px solid var(--footer_btn_bg);
+    text-decoration: none;
+    display:block;
+    height:100%;
+    width:100%;
+    line-height:50px;
+    color:var(--danger);
+    text-transform: uppercase;
+    font-weight: bold;
+    padding-left:25%;
+    border-left: 5px solid transparent;
+    letter-spacing: 1px;
+    transition:all 0.3s linear;
+  }
+  .aside .text {
+    transition: all .4s linear;
+  }
+  .aside li:hover .text{
+   margin-left:20px
+  }
+  .aside .active a {
+    color: var(--footer_links_hover);
+    border-left:5px solid var(--footer_bg);
+    background-color: var(--danger);
+    outline:0;
+  }
+  .aside li:not(.active):hover a{
+    color: var(--footer_links_hover);
+    border-left:5px solid var(--footer_bg);
+    background-color: var(--danger);
+  }
+  
+  .aside span[class ^= "icon"]{
+    position:absolute;
+    left:20px;
+    font-size:1.5em;
+    transition: all 0.3s linear;
+  }
+  .aside h4{
+      padding-bottom: 10px;
+      font-size: 20px;
+      font-weight: bold;
+  }
+  .aside h2{
+    padding-bottom: 10px;
+    font-size: 30px;
+    font-weight: bold;
+}
+  
+  @media only screen and (max-width : 860px){
+    .aside .text{
+      display:none;
+    }
+    .aside .nav-container, a {
+      width: 70px;
+    }
+    .aside a:hover{
+      width: 200px;
+      z-index:1;
+      border-top: 1px solid rgba(255,255,255,0.1);
+      border-bottom: 1px solid black;
+      box-shadow: 0 0 1px 1px black;
+    }
+    .aside a:hover .text {
+      display:block;
+      padding-left: 30%;    
+    }
+    
+  }
+  @media only screen and (max-width: 480px){
+    .aside .nav-container, a{ width:50px; }
+    .aside span[class ^= "icon"]{left:8px;}
+  }

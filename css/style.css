@@ -820,6 +820,7 @@ section.subscribe{
 }
 section.subscribe .container > div:first-child img{
     width:90%;
+    margin-top: -123px;
 }
 section.subscribe .container div:first-child{
     flex:1;
@@ -1060,3 +1061,5 @@ box-shadow: none;
 
 
 
+
+ /***********************************************************************************/
