@@ -1,3 +1,29 @@
+/* fonts  */
+@font-face {
+    font-family:"Raleway-regular";
+    src:url(../fonts/Raleway-Regular.ttf)
+}
+@font-face {
+    font-family:"Raleway-medium";
+    src:url(../fonts/Raleway-Medium.ttf)
+}
+@font-face {
+    font-family:"Raleway-bold";
+    src:url(../fonts/Raleway-Bold.ttf)
+}
+@font-face {
+    font-family:"Raleway-extrabold";
+    src:url(../fonts/Raleway-ExtraBold.ttf)
+}
+@font-face {
+    font-family:"Raleway-semibold";
+    src:url(../fonts/Raleway-SemiBold.ttf)
+}
+@font-face {
+    font-family:"Raleway-black";
+    src:url(../fonts/Raleway-Black.ttf)
+}
+
 :root {
     --primary:#EEBF00;
     --secondary:#232B38;
@@ -15,6 +41,9 @@
     --footer_logo: #EEBF00 ;
     --footer_input:rgba(0, 0, 0, 0.3);
     --border_color:rgba(255, 255, 255, 0.05);
+    --font_bold:"Raleway-bold";
+    --font_extrabold:"Raleway-extrabold";
+    --font_semibold:"Raleway-semibold";
 }
 
 
@@ -43,10 +72,11 @@ body{
     height: 270px;
 }
 .service_header h2{
+    font-family: var(--font_extrabold);
    font-size: 50px;
    font-weight:bolder;
 }
-.service_page .container{
+.service_page .wrapper{
     padding-bottom: 100px;
     width: 1100px;
     display: flex;
@@ -55,18 +85,21 @@ body{
 }
 .service_page h5{
     padding-top: 80px;
-    text-align: center;
-    color: var(--footer_btn_bg);
-    font-size: 40px;
     font-weight: bolder;
+    text-transform: capitalize;
+    font-size: 38px;
+    font-family:var(--font_extrabold);
+    line-height: 1.3;
+    color: #333;
+    text-align: center;
 }
-.container .box{
+.container .box {
     margin-top: 50px;
     position: relative;
-    width: 320px;
+    width: 245px;
     background: var(--heaven);
-    padding: 100px 40px 60px;
-    box-shadow: 0 15px 45px rgba(0,0,0,.1);
+    padding: 50px 20px 32px;
+    box-shadow: 0 15px 45px rgb(0 0 0 / 10%);
 }
 .container .box::before{
     content: '';
@@ -87,9 +120,9 @@ body{
 }
 .container .box h2{
     position: absolute;
-    Left: 40px;
-    top: 60px;
-    font-size: 4em;
+    Left: 15px;
+    top: 25px;
+    font-size: 3em;
     color: var(--danger);
     font-weight: 800;
     z-index: 1;
@@ -99,13 +132,14 @@ body{
 .container .box:hover h2{
     opacity: 1;
     color: var(--heaven);
-    transform: translateY(-40px);
+    transform: translateY(-20px);
 }
 .container .box h3{
+    font-family: var(--font_semibold);
     position: relative;
-    font-size: 1.5em;
+    font-size: 20px;
     z-index: 2;
-    color: Red;
+    color: var(--danger);
     font-weight: bold;
     transition: 0.5s;
 }
@@ -114,6 +148,7 @@ body{
     z-index: 2;
     color: #555;
     transition: 0.5s;
+    font-size: 15px;
 }
 .container .box:hover h3,
 .container .box:hover p{

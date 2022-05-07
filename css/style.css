@@ -44,6 +44,9 @@
     --footer_logo: #EEBF00 ;
     --footer_input:rgba(0, 0, 0, 0.3);
     --border_color:rgba(255, 255, 255, 0.05);
+    --font_bold:"Raleway-bold";
+    --font_extrabold:"Raleway-extrabold";
+    --font_semibold:"Raleway-semibold";
 }
 
 /* Reset  */
@@ -163,7 +166,7 @@ body{
   header.topbar{
       background:var(--secondary);
       color:var(--pure);
-      font-family:"Raleway-semibold";
+      font-family:var(--font_semibold);
       padding:0.75rem 0;
   }
   header.topbar .auth > div a{
@@ -204,14 +207,16 @@ body{
 nav .top .contact img, nav .top .time img{
     margin-right:1rem;
 }
-
+.navbar .container{
+    justify-content: center;
+}
 .justify-center{
     justify-content:center;
 }
 nav .navbar a{
     text-decoration:none;
     color:var(--secondary);
-    font-family:"Raleway-semibold";
+    font-family:var(--font_semibold);
     font-size:1rem;
     padding:1rem 1.5rem;
     transition:all .3s ease;
@@ -411,7 +416,10 @@ nav .navbar a:hover{
 
 header.hero{
     height:600px;
-    background-image:url(../images/5.jpg);
+    background: linear-gradient(
+        rgba(35,43,56,0.4),
+        rgba(35,43,56,0.4)
+    ),url(../images/5.jpg);
     background-size: 1500px;
     background-position: 0% 35%;
     background-repeat: no-repeat;
@@ -507,6 +515,7 @@ section{
     padding-bottom: 100px;
 }
 .about h2{
+    font-family: var(--font_extrabold);
     color: red;
     font-weight: bolder;
     font-size: 50px;
@@ -526,6 +535,7 @@ section{
     padding-top: 100px;
 }
 .service_section h2{
+    font-family: var(--font_extrabold);
     color: red;
     font-weight: bolder;
     font-size: 50px;
@@ -534,6 +544,8 @@ section{
 }
 .service_section .service_list{
     padding-top: 40px;
+    padding-left: 50px;
+    padding-right: 80px;
     display: flex;
     flex-direction: row !important;
     flex-wrap: wrap;
@@ -669,7 +681,7 @@ section.big-deal .timer div{
     justify-content: center;
 }
 section.big-deal .timer div span:first-child{
-    font-family: "Raleway-semibold";
+    font-family: var(--font_semibold);
     font-size:2.5rem;
     color:var(--heaven);
     margin-bottom:0.05rem;
@@ -690,6 +702,7 @@ section.big-deal .timer div span:last-child{
     padding: 0 0 7rem 0; 
 }
 .working h2{
+    font-family: var(--font_extrabold);
     font-weight: bolder;
     color: var(--primary);
 }
@@ -830,7 +843,7 @@ section.subscribe .container div:last-child{
 }
 
 section.subscribe h1{
-    font-family:"Raleway-bold";
+    font-family:var(--font_bold);
     font-size: 1.5rem;
     margin-bottom:1.5rem;
 }
@@ -887,6 +900,7 @@ section.contact-us{
 }
 section.contact-us h1,
 .big-deal h1{
+    font-family: var(--font_extrabold);
     text-align: center;
     padding-bottom: 45px;
 }
