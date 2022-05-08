@@ -324,6 +324,41 @@ nav .navbar a:hover{
     width:20px;
     height:20px;
 }
+.dropdown{
+    padding: 4px;
+}
+.dropdown:hover{
+    background-color: var(--footer_btn_bg);
+}
+.dropdown-menu{
+    padding: 0;
+    background-color: var(--heaven);
+    box-shadow: 0px -12px 21px -15px rgba(0, 0, 0, 0.1);
+}
+.dropdown-menu .btn{
+    padding: 0px;
+    border: 1px solid var(--footer_btn_bg);
+}
+.dropdown-menu .btn:hover{
+    background-color: transparent;
+}
+.dropdown-menu li{
+    padding: 10px;
+    background-color: var(--heaven);
+    transition: all 0.5s;
+}
+.dropdown-menu li a{
+    padding: 0px !important;
+}
+.dropdown-menu li a:hover{
+    background-color: transparent !important;
+    color: var(--footer_bg);
+}
+.dropdown-menu li:hover {
+    background-color: var(--footer_btn_bg);
+    color: var(--footer_bg);
+}
+
 
 @media (max-width:992px){
     .nav-trigger{
