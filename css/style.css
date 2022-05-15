@@ -33,12 +33,10 @@
 /* colors  */
 
 :root {
-    /* #FC2843
-    #1F2227
-    #B26164 */
     --primary: #FC2843;
     --secondary: #1F2227;
     --ternary: #B26164;
+    --bg_gray: #F2F2F2;
     --danger: #FE4545;
     --pure: #FEFEFE;
     --light: #F0F0F0;
@@ -527,6 +525,7 @@ nav .navbar a:hover {
 
 /****************** Hero Section *******************/
 .hero{
+    background-color: var(--bg_gray);
     /* background-image: linear-gradient(to left, var(--secondary),var(--secondary)); */
     /* background-color: var(--secondary); */
 }
@@ -685,8 +684,6 @@ nav .navbar a:hover {
 .about {
     padding-top: 100px;
     padding-bottom: 100px;
-    background-color: var(--secondary);
-    color: var(--heaven) !important;
 }
 
 .about h2 {
@@ -708,6 +705,7 @@ nav .navbar a:hover {
 /****************** Service Section *******************/
 .services{
     margin-top: 80px;
+    background-color: var(--bg_gray);
 }
 .each_service .icon_image_wrapper {
     height: 80px;
@@ -757,20 +755,6 @@ nav .navbar a:hover {
 .custom_btn.unfilled:hover {
     background-color: var(--primary);
     color: white;
-}
-
-.services .custom_btn {
-    font-weight: 600;
-    font-size: 12px !important;
-    text-transform: uppercase;
-    border-radius: 15px;
-    padding: 5px 15px;
-    display: inline-block;
-    border: none;
-    text-align: center;
-    cursor: pointer;
-    box-shadow: 0px 0px 10px 0px rgb(0 0 0 / 10%);
-    transition: background-color 0.3s ease-in, color 0.3s ease-in;
 }
 
 /****************** Key Feature Section *******************/
@@ -868,6 +852,7 @@ section.big-deal .timer div span:last-child {
 
 
 .working {
+    background-color: var(--bg_gray);
     padding: 0 0 7rem 0;
     font-family: var(--font-family);
 }
@@ -1260,9 +1245,6 @@ button:not(:disabled) {
     padding: 50px 0;
     font-family: var(--font-family);
 }
-.testimonials .header-wrapper{
-    color: var(--primary);
-}
 
 .testimonials .owl-carousel {
     display: flex;
@@ -1276,7 +1258,7 @@ button:not(:disabled) {
     left: 0;
     top: 0;
     bottom: 0;
-    background: var(--secondary);
+    background: var(--bg_gray);
 }
 
 .testimonials .title {
@@ -1387,7 +1369,9 @@ button:not(:disabled) {
 [data-toggle="collapse"].collapsed i:before {
     content: "\f067";
 }
-
+.faq{
+    background-color: var(--bg_gray);
+}
 #accordion .card-header {
     margin-bottom: 8px;
 }
