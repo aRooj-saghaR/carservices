@@ -234,6 +234,11 @@ nav .top .time img {
     margin-right: 1rem;
 }
 
+.navbar{
+    border-bottom: 2px solid var(--primary);
+    box-shadow: 2px 12px 8px -8px rgba(0,0,0,.2);
+}
+
 .navbar .container {
     justify-content: center;
 }
@@ -528,6 +533,8 @@ nav .navbar a:hover {
     background-color: var(--bg_gray);
     /* background-image: linear-gradient(to left, var(--secondary),var(--secondary)); */
     /* background-color: var(--secondary); */
+    padding-top: 40px;
+    padding-bottom: 70px;
 }
 .h_heading_1 {
     font-size: 4rem;
@@ -598,6 +605,7 @@ nav .navbar a:hover {
     border-radius: 10px;
     max-width: 130px;
     transition: box-shadow 0.3s ease-in, transform 0.3s ease-in, -webkit-box-shadow 0.3s ease-in, -webkit-transform 0.3s ease-in;
+    background-color: white;
 }
 
 .each_icon .icon_container {
@@ -706,6 +714,8 @@ nav .navbar a:hover {
 .services{
     margin-top: 80px;
     background-color: var(--bg_gray);
+    padding-top: 40px;
+    padding-bottom: 80px;
 }
 .each_service .icon_image_wrapper {
     height: 80px;
@@ -759,7 +769,7 @@ nav .navbar a:hover {
 
 /****************** Key Feature Section *******************/
 .key_features{
-    margin-top: 80px;
+    margin-top: 50px;
 }
 .header-wrapper {
     text-align: center;
@@ -853,7 +863,7 @@ section.big-deal .timer div span:last-child {
 
 .working {
     background-color: var(--bg_gray);
-    padding: 0 0 7rem 0;
+    padding: 0 0 5rem 0;
     font-family: var(--font-family);
 }
 
@@ -1106,7 +1116,9 @@ section.big-deal .timer div span:last-child {
 .carousel-nav {
     width: 100%;
     border-bottom: 1px solid #ccc;
+    margin-top: 40px;
     margin-bottom: 40px;
+    background-color: #fff;
 }
 
 .carousel-nav a {
@@ -1370,7 +1382,7 @@ button:not(:disabled) {
     content: "\f067";
 }
 .faq{
-    background-color: var(--bg_gray);
+    background-color: var(--bg-white);
 }
 #accordion .card-header {
     margin-bottom: 8px;
@@ -1438,6 +1450,10 @@ button:not(:disabled) {
     color: var(--primary);
 }
 
+.faq-body{
+    background-color: var(--bg_gray);
+    margin-bottom: 10px;
+}
 /****************** Newsletter *******************/
 
 
