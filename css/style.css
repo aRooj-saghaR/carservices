@@ -710,7 +710,7 @@ nav .dropdown ul li {
 
 .about h2 {
     font-family: var(--font_extrabold);
-    color: red;
+    color: var(--danger);
     font-weight: bolder;
     font-size: 50px;
     line-height: 50px;
@@ -1195,7 +1195,7 @@ section.big-deal .timer div span:last-child {
 }
 
 .tab-link-container ul li.active_nav button {
-    background-color: red;
+    background-color: var(--danger);
     color: white;
     border-color: black;
 }
