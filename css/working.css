@@ -1,0 +1,243 @@
+/* fonts  */
+
+@font-face {
+    font-family: "Raleway-regular";
+    src: url(../fonts/Raleway-Regular.ttf)
+}
+
+@font-face {
+    font-family: "Raleway-medium";
+    src: url(../fonts/Raleway-Medium.ttf)
+}
+
+@font-face {
+    font-family: "Raleway-bold";
+    src: url(../fonts/Raleway-Bold.ttf)
+}
+
+@font-face {
+    font-family: "Raleway-extrabold";
+    src: url(../fonts/Raleway-ExtraBold.ttf)
+}
+
+@font-face {
+    font-family: "Raleway-semibold";
+    src: url(../fonts/Raleway-SemiBold.ttf)
+}
+
+@font-face {
+    font-family: "Raleway-black";
+    src: url(../fonts/Raleway-Black.ttf)
+}
+
+
+/* colors  */
+
+:root {
+    --primary: #FC2843;
+    --secondary: #1F2227;
+    --ternary: #B26164;
+    --bg_gray: #F2F2F2;
+    --danger: #FE4545;
+    --pure: #FEFEFE;
+    --light: #F0F0F0;
+    --heaven: #FFFFFF;
+    --footer_bg: #1F2227;
+    --footer_links: rgba(255, 255, 255, 0.3);
+    --footer_links_hover: #fff;
+    --footer_btn_bg: #FC2843;
+    --footer_Y_text: #FC2843;
+    --footer_heading: rgba(255, 255, 255, 0.9);
+    --footer_logo: #FC2843;
+    --footer_input: rgba(0, 0, 0, 0.3);
+    --border_color: rgba(255, 255, 255, 0.05);
+    --font-family: 'Montserrat', sans-serif;
+    --font_bold: "Raleway-bold";
+    --font_extrabold: "Raleway-extrabold";
+    --font_semibold: "Raleway-semibold";
+}
+
+
+/* Reset  */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /* font-family: var(--font-family) !important; */
+}
+
+a {
+    text-decoration: none !important;
+}
+
+body {
+    -webkit-font-smoothing: antialiased;
+    font-family: "Raleway-regular";
+}
+
+.bg_gray {
+    background-color: var(--bg_gray);
+}
+
+.main_heading {
+    display: inline-block;
+    font-size: 2rem;
+    font-weight: 600 !important;
+    position: relative;
+}
+
+.max600 {
+    max-width: 600px;
+    display: block;
+    margin: 0px auto;
+}
+
+.how_it_works {
+    max-height: 300px;
+    width: 100%;
+    max-width: 500px;
+    display: block;
+    margin: auto;
+    background-color: white;
+    overflow: hidden;
+    border-radius: 10px;
+    position: relative;
+}
+
+.how_it_works img {
+    -o-object-fit: contain;
+    object-fit: contain;
+    max-height: 300px;
+    display: block;
+}
+
+.how_it_works .play_btn_wrapper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    z-index: 44;
+    cursor: pointer;
+}
+
+.bdr-ripple-ani-btn.pink {
+    background: #0FB943;
+    color: white;
+    -webkit-animation: at-ripple-pink 0.6s linear infinite;
+    animation: at-ripple-pink 0.6s linear infinite;
+}
+
+.bdr-ripple-ani-btn {
+    display: block;
+    background: #FFF;
+    width: 48px;
+    height: 48px;
+    line-height: 48px;
+    text-align: center;
+    border-radius: 100%;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    color: #666;
+    -webkit-animation: at-ripple 0.6s linear infinite;
+    animation: at-ripple 0.6s linear infinite;
+    overflow: hidden;
+}
+
+.how_it_works::after {
+    content: " ";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.each_how_it_works_steps .image_section img {
+    max-height: 400px;
+}
+
+.content_wrapper_how_it_works {
+    padding: 0px 20px;
+}
+
+.working_page p {
+    font-size: 0.9rem;
+    margin: 0;
+    font-weight: 400;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container_scroll_down {
+    position: relative;
+    width: 20px;
+    height: 20px;
+}
+
+.arrows {
+    width: 60px;
+    height: 72px;
+    left: 50%;
+    bottom: 20px;
+}
+
+.arrows path {
+    stroke: var(--danger);
+    fill: transparent;
+    stroke-width: 10px;
+    animation: arrow 2s infinite;
+    -webkit-animation: arrow 2s infinite;
+}
+
+@keyframes arrow {
+    0% {
+        opacity: 0
+    }
+    40% {
+        opacity: 1
+    }
+    80% {
+        opacity: 0
+    }
+    100% {
+        opacity: 0
+    }
+}
+
+@-webkit-keyframes arrow
+/*Safari and Chrome*/
+
+{
+    0% {
+        opacity: 0
+    }
+    40% {
+        opacity: 1
+    }
+    80% {
+        opacity: 0
+    }
+    100% {
+        opacity: 0
+    }
+}
+
+.arrows path.a1 {
+    animation-delay: -1s;
+    -webkit-animation-delay: -1s;
+    /* Safari 和 Chrome */
+}
+
+.arrows path.a2 {
+    animation-delay: -0.5s;
+    -webkit-animation-delay: -0.5s;
+    /* Safari 和 Chrome */
+}
+
+.arrows path.a3 {
+    animation-delay: 0s;
+    -webkit-animation-delay: 0s;
+    /* Safari 和 Chrome */
+}

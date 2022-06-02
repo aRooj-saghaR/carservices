@@ -1,4 +1,5 @@
 /* fonts  */
+
 @font-face {
     font-family: "Raleway-regular";
     src: url(../fonts/Raleway-Regular.ttf)
@@ -56,12 +57,14 @@
     --font_semibold: "Raleway-semibold";
 }
 
+
 /* Reset  */
+
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: var(--font-family) !important;
+    /* font-family: var(--font-family) !important; */
 }
 
 a {
@@ -109,6 +112,7 @@ body {
     height: 100vh;
     overflow: hidden;
 }
+
 
 /* --------- Header -----------*/
 
@@ -215,13 +219,13 @@ nav .top {
     padding: 1.5rem 0;
 }
 
-nav .top .contact h5,
+nav .top .nav_contact h5,
 nav .top .time h5 {
     font-family: "Raleway-black";
     margin-bottom: 0.25rem;
 }
 
-nav .top .contact h6,
+nav .top .nav_contact h6,
 nav .top .time h6 {
     font-family: "Raleway-medium";
     letter-spacing: 0.055rem;
@@ -229,14 +233,14 @@ nav .top .time h6 {
     color: var(--ternary);
 }
 
-nav .top .contact img,
+nav .top .nav_contact img,
 nav .top .time img {
     margin-right: 1rem;
 }
 
-.navbar{
+.navbar {
     border-bottom: 2px solid var(--primary);
-    box-shadow: 2px 12px 8px -8px rgba(0,0,0,.2);
+    box-shadow: 2px 12px 8px -8px rgba(0, 0, 0, .2);
 }
 
 .navbar .container {
@@ -270,12 +274,12 @@ nav .navbar a:hover {
     color: var(--pure);
 }
 
-.magic-shadow {
+.navigation {
     position: relative;
     background: var(--heaven);
 }
 
-.magic-shadow:after {
+.navigation:after {
     content: '';
     display: block;
     width: 100%;
@@ -286,15 +290,14 @@ nav .navbar a:hover {
     position: absolute;
     bottom: -22px;
     z-index: -1;
-
 }
 
-.magic-shadow-sm {
+.navigation-sm {
     position: relative;
     background: var(--heaven);
 }
 
-.magic-shadow-sm:after {
+.navigation-sm:after {
     content: '';
     display: block;
     width: 100%;
@@ -342,26 +345,26 @@ nav .navbar a:hover {
     color: var(--primary);
 }
 
-.nav-background .contact,
+.nav-background .nav_contact,
 .nav-background .time {
     padding: 1rem;
     padding-left: 0;
 }
 
-.nav-background .contact img,
+.nav-background .nav_contact img,
 .nav-background .time img {
     margin-right: 1rem;
 }
 
-.nav-background .contact h5,
+.nav-background .nav_contact h5,
 .nav-background .time h5 {
     font-family: "Raleway-bold";
     margin-bottom: 0.25rem;
     font-size: 1rem;
 }
 
-.nav-background .contact h6,
-.nav-background .contact h6 {
+.nav-background .nav_contact h6,
+.nav-background .nav_contact h6 {
     font-size: 0.75rem;
 }
 
@@ -381,82 +384,102 @@ nav .navbar a:hover {
     height: 20px;
 }
 
+nav .dropdown ul {
+    float: left;
+    left: 0;
+    opacity: 0;
+    position: absolute;
+    top: 50px;
+    visibility: hidden;
+    z-index: 1;
+    -webkit-transition: all .25s ease;
+    -moz-transition: all .25s ease;
+    -ms-transition: all .25s ease;
+    -o-transition: all .25s ease;
+    transition: all .25s ease;
+}
+
+nav .dropdown:hover ul {
+    opacity: 1;
+    top: 60px;
+    visibility: visible;
+}
+
+nav .dropdown ul li {
+    float: none;
+    width: 100%;
+}
+
 .dropdown {
-    padding: 4px;
+    padding: 2px;
 }
 
 .dropdown:hover {
     background-color: var(--footer_btn_bg);
 }
 
-.dropdown-menu {
+.dropdown_menu {
+    z-index: 1000 !important;
+    width: 235px;
     padding: 0;
     background-color: var(--heaven);
     box-shadow: 0px -12px 21px -15px rgba(0, 0, 0, 0.1);
 }
 
-.dropdown-menu .btn {
+.dropdown_menu .btn {
     padding: 0px;
     border: 1px solid var(--footer_btn_bg);
 }
 
-.dropdown-menu .btn:hover {
+.dropdown_menu .btn:hover {
     background-color: transparent;
 }
 
-.dropdown-menu li {
+.dropdown_menu li {
+    list-style: none;
     padding: 10px;
     background-color: var(--heaven);
     transition: all 0.5s;
 }
 
-.dropdown-menu li a {
-    padding: 0px !important;
+.dropdown_menu li a {
+    padding: 0px 0px 0px 10px !important;
 }
 
-.dropdown-menu li a:hover {
+.dropdown_menu li a:hover {
     background-color: transparent !important;
     color: var(--footer_bg);
 }
 
-.dropdown-menu li:hover {
-    background-color: var(--footer_btn_bg);
-    color: var(--footer_bg);
+.dropdown_menu li:hover {
+    background-color: #f3eded;
 }
-
 
 @media (max-width:992px) {
     .nav-trigger {
         display: block;
     }
-
     header.topbar,
     nav {
         display: none;
     }
-
     header.hero {
         margin-top: -4rem;
     }
-
     header.hero .hero-image {
         right: -160px;
         top: 100px;
     }
-
     .top-products .slider-btn {
         display: none !important;
     }
-
     .latest-news .article-wrapper {
         flex-direction: column;
     }
-
     .latest-news .article-wrapper .card {
         margin-right: 0;
         margin-bottom: 4rem;
     }
-
     footer .instagram-api .post-wrap>div {
         width: calc(1/2*100% - (1 - 1/3)*10px);
     }
@@ -466,34 +489,27 @@ nav .navbar a:hover {
     .about-meal .about-meal-wrap {
         flex-direction: column;
     }
-
     .about-meal .about-meal-wrap img {
         width: 100%;
         margin-bottom: 2rem;
     }
-
     section.our-services .card-wrapper {
         flex-direction: column;
     }
-
     section.our-services .card-wrapper .service-card {
         margin-bottom: 6rem;
     }
-
     footer .container {
         flex-direction: column;
     }
-
     footer .box {
         text-align: left;
         margin-right: 0;
         margin-bottom: 3rem;
     }
-
     footer .box:nth-child(3) h3 {
         text-align: left;
     }
-
     footer .box:nth-child(3)>div {
         display: block;
     }
@@ -504,38 +520,35 @@ nav .navbar a:hover {
         right: -235px;
         top: 150px;
     }
-
     header.hero .container {
         padding-left: 1rem;
     }
-
     header.hero {
         margin-top: -3rem;
     }
-
     section.big-deal .timer>div {
         margin-right: 0.50rem;
     }
-
     section.big-deal .timer {
         margin-right: -0.5rem;
     }
-
     section.subscribe .container {
         flex-direction: column;
         padding: 0.50rem;
     }
-
 }
 
+
 /****************** Hero Section *******************/
-.hero{
+
+.hero {
     background-color: var(--bg_gray);
     /* background-image: linear-gradient(to left, var(--secondary),var(--secondary)); */
     /* background-color: var(--secondary); */
     padding-top: 40px;
     padding-bottom: 70px;
 }
+
 .h_heading_1 {
     font-size: 4rem;
     color: black;
@@ -572,7 +585,7 @@ nav .navbar a:hover {
     padding: 0px 10px;
 }
 
-.coupen_code span{
+.coupen_code span {
     font-weight: bolder;
 }
 
@@ -687,6 +700,7 @@ nav .navbar a:hover {
     box-shadow: 0px 0px 10px 10px rgb(0 0 0 / 15%);
 }
 
+
 /****************** About Section *******************/
 
 .about {
@@ -710,13 +724,16 @@ nav .navbar a:hover {
     padding-top: 50px;
 }
 
+
 /****************** Service Section *******************/
-.services{
+
+.services {
     margin-top: 80px;
     background-color: var(--bg_gray);
     padding-top: 40px;
     padding-bottom: 80px;
 }
+
 .each_service .icon_image_wrapper {
     height: 80px;
     width: 80px;
@@ -736,11 +753,13 @@ nav .navbar a:hover {
     color: black;
     font-weight: 400;
 }
-.each_service a{
+
+.each_service a {
     transition: all 0.3s;
- }
-.each_service a:hover{
-   color: var(--secondary);
+}
+
+.each_service a:hover {
+    color: var(--secondary);
 }
 
 .each_service .text_container ul {
@@ -767,10 +786,13 @@ nav .navbar a:hover {
     color: white;
 }
 
+
 /****************** Key Feature Section *******************/
-.key_features{
+
+.key_features {
     margin-top: 50px;
 }
+
 .header-wrapper {
     text-align: center;
 }
@@ -814,6 +836,7 @@ nav .navbar a:hover {
 .font_weight_400 {
     font-weight: 400 !important;
 }
+
 
 /****************** Big Deal *******************/
 
@@ -859,7 +882,6 @@ section.big-deal .timer div span:last-child {
 
 
 /****************** Working *******************/
-
 
 .working {
     background-color: var(--bg_gray);
@@ -988,7 +1010,9 @@ section.big-deal .timer div span:last-child {
     padding: 10px 50px;
 }
 
+
 /*Clearing Floats*/
+
 .cf:before,
 .cf:after {
     content: "";
@@ -1003,6 +1027,7 @@ section.big-deal .timer div span:last-child {
     zoom: 1;
 }
 
+
 /* Form wrapper styling */
 
 .search-wrapper {
@@ -1012,6 +1037,7 @@ section.big-deal .timer div span:last-child {
     background: white;
     box-shadow: 0 4px 20px -2px #e9e9e9;
 }
+
 
 /* Form text input */
 
@@ -1040,7 +1066,6 @@ section.big-deal .timer div span:last-child {
 }
 
 .search-wrapper input:-moz-placeholder {
-
     color: #999;
     font-weight: normal;
     font-style: italic;
@@ -1053,7 +1078,9 @@ section.big-deal .timer div span:last-child {
     border-style: none;
 }
 
+
 /* Form submit button */
+
 .search-wrapper button {
     overflow: visible;
     position: relative;
@@ -1146,6 +1173,7 @@ section.big-deal .timer div span:last-child {
     border-bottom: 1px solid #000;
 }
 
+
 /****************** Brands Section *******************/
 
 .tab-link-container {
@@ -1166,8 +1194,8 @@ section.big-deal .timer div span:last-child {
     text-align: center;
 }
 
-.tab-link-container ul li.active button {
-    background-color: var(--primary);
+.tab-link-container ul li.active_nav button {
+    background-color: red;
     color: white;
     border-color: black;
 }
@@ -1192,7 +1220,7 @@ button:not(:disabled) {
     outline: none;
 }
 
-.tab-link-container ul li.active button .itemText {
+.tab-link-container ul li.active_nav button .itemText {
     color: white;
 }
 
@@ -1245,10 +1273,23 @@ button:not(:disabled) {
     margin: 0px auto;
 }
 
+.germal_brand {
+    overflow: hidden;
+}
+
+.filterDiv {
+    display: none;
+    /* Hidden by default */
+}
+
+.show_brands {
+    display: block;
+}
+
+
 /****************** Customer Reviews **************/
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap');
-
 .testimonials {
     margin-top: 80px;
     position: relative;
@@ -1372,6 +1413,7 @@ button:not(:disabled) {
     color: #FFD832;
 }
 
+
 /****************** FAQ Section *******************/
 
 [data-toggle="collapse"] i:before {
@@ -1381,9 +1423,11 @@ button:not(:disabled) {
 [data-toggle="collapse"].collapsed i:before {
     content: "\f067";
 }
-.faq{
+
+.faq {
     background-color: var(--bg-white);
 }
+
 #accordion .card-header {
     margin-bottom: 8px;
 }
@@ -1450,12 +1494,13 @@ button:not(:disabled) {
     color: var(--primary);
 }
 
-.faq-body{
+.faq-body {
     background-color: var(--bg_gray);
     margin-bottom: 10px;
 }
-/****************** Newsletter *******************/
 
+
+/****************** Newsletter *******************/
 
 section.subscribe {
     background: var(--secondary);
@@ -1464,7 +1509,7 @@ section.subscribe {
     margin-bottom: 80px !important;
 }
 
-.subscribe .container{
+.subscribe .container {
     padding-top: 85px;
 }
 
@@ -1485,14 +1530,14 @@ section.subscribe h1 {
     font-family: var(--font_bold);
     font-size: 1.5rem;
     margin-bottom: 1.5rem;
-    color:  var(--primary);
+    color: var(--primary);
 }
 
 section.subscribe p {
     font-family: "Raleway-medium";
     font-size: 1rem;
     margin-bottom: 1.5rem;
-    color:  var(--heaven);
+    color: var(--heaven);
     line-height: 1.5;
 }
 
@@ -1542,58 +1587,30 @@ section.subscribe .input-wrap button:hover {
     background: var(--secondary);
 }
 
-section.contact-us {
-    padding-top: 0;
-    padding-bottom: 0;
+
+/* --------- Contact -----------*/
+
+.contact {
+    background-color: var(--bg_gray);
 }
 
-section.contact-us h1,
-.big-deal h1 {
-    font-family: var(--font_extrabold);
-    text-align: center;
-    padding-bottom: 45px;
+.links_design i {
+    color: var(--danger);
 }
 
-section.contact-us .contact-info-wrapper {
-    padding: 4rem 0;
-    flex: 1;
+.links_design {
+    font-size: larger;
+    font-weight: 600 !important;
+    color: var(--footer_bg);
+    transition: .3s linear;
 }
 
-section.contact-us .map {
-    flex: 1;
-    filter: grayscale(100%);
-    -webkit-filter: grayscale(100%);
+.links_design:hover {
+    color: var(--danger);
 }
-
-section.contact-us .contact-info {
-    display: flex;
-    justify-content: center;
-}
-
-section.contact-us .contact-info>div>div {
-    display: flex;
-    align-items: center;
-    margin-bottom: 2rem;
-}
-
-section.contact-us .contact-info>div>div img {
-    margin-right: 1rem;
-}
-
-section.contact-us .contact-info>div>div>div {
-    display: flex;
-    flex-direction: column;
-}
-
-section.contact-us .contact-info>div>div>div span:first-child {
-    font-family: "Raleway-bold";
-    margin-bottom: 0.25rem;
-}
-
 
 
 /* --------- Footer -----------*/
-
 
 footer {
     padding: 5em 0;
@@ -1753,12 +1770,6 @@ footer {
         border: none;
     }
 }
-
-
-
-
-
-
 
 
 /***********************************************************************************/
