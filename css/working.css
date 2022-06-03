@@ -80,6 +80,10 @@ body {
     background-color: var(--bg_gray);
 }
 
+.bg_white {
+    background-color: var(--heaven);
+}
+
 .main_heading {
     display: inline-block;
     font-size: 2rem;
@@ -123,7 +127,7 @@ body {
 }
 
 .bdr-ripple-ani-btn.pink {
-    background: #0FB943;
+    background: var(--danger);
     color: white;
     -webkit-animation: at-ripple-pink 0.6s linear infinite;
     animation: at-ripple-pink 0.6s linear infinite;
@@ -178,7 +182,7 @@ body {
 
 .arrows {
     width: 60px;
-    height: 72px;
+    height: 90px;
     left: 50%;
     bottom: 20px;
 }
@@ -240,4 +244,114 @@ body {
     animation-delay: 0s;
     -webkit-animation-delay: 0s;
     /* Safari 和 Chrome */
+}
+
+.packages {
+    padding-top: 50px !important;
+}
+
+.navigation-header-wrapper {
+    text-align: center;
+    width: 100%;
+    overflow-x: auto;
+}
+
+.navigation-header-wrapper .navigation-header-inner {
+    min-width: 400px;
+    text-align: center;
+    margin-bottom: 15px;
+    border-bottom: 1px solid var(--danger);
+}
+
+.navigation-header-wrapper .navigation-header-inner ul {
+    display: inline-block;
+    text-align: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.navigation-header-wrapper .navigation-header-inner ul li.active {
+    background-color: var(--danger);
+    color: white;
+}
+
+.navigation-header-wrapper .navigation-header-inner ul li {
+    display: inline-block;
+    background-color: white;
+    border: 1px solid var(--danger);
+    padding: 10px 15px;
+    cursor: pointer;
+    border-bottom: none;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+
+/* .tabcontent {
+    display: none;
+} */
+
+.tabcontent .list-design {
+    padding-left: 25px;
+}
+
+.tabcontent .list-design li {
+    display: inline-block;
+    width: 48%;
+    padding: 4px 10px 4px 0px;
+    color: #212529;
+    font-size: 0.9rem;
+    margin: 0;
+    font-weight: 400;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.tabcontent .list-design li .list-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+}
+
+.tabcontent .list-design li i {
+    margin-right: 10px;
+    color: var(--danger);
+    min-width: 10px;
+}
+
+.offer_inner_small .margin_price {
+    position: relative;
+    display: inline-block;
+}
+
+.offer_inner_small .margin_price::before {
+    content: " ";
+    height: 2px;
+    position: absolute;
+    width: calc(100% + 10px);
+    left: -5px;
+    bottom: 12px;
+    background-color: var(--danger);
+    -webkit-transform: rotate(-15deg);
+    transform: rotate(-15deg);
+}
+
+.bigger-text {
+    font-size: 3rem !important;
+}
+
+.secondary-color {
+    color: #ce1126 !important;
+}
+
+.bold-text {
+    font-weight: 600 !important;
+}
+
+.info-text {
+    font-size: 0.8rem;
+    font-weight: 600;
+    font-style: italic;
 }

@@ -74,3 +74,22 @@ for (var i = 0; i < btns.length; i++) {
         this.className += " active_nav";
     });
 }
+
+
+function openTabContentOurServices(evt, containerToDisplay, className, that, tabGroup) {
+    //console.log(that);
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName(tabGroup);
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+
+    document.getElementById(containerToDisplay).style.display = "block";
+
+    $(that).parents(".tab-link-container, .tab_links_wrapper").children().find("." + className).removeClass(" active ");
+    $(that).addClass(" active ");
+}
+document.getElementById("defaultOpen").click();
+$(".compare_prices").click(function() {
+    $('#compareModal').modal('toggle');
+})
