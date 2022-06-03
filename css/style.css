@@ -224,6 +224,11 @@ nav .top {
     padding: 1.5rem 0;
 }
 
+nav .top .branding img {
+    height: 70px;
+    width: 130px;
+}
+
 nav .top .nav_contact h5,
 nav .top .time h5 {
     font-family: "Raleway-black";
@@ -235,7 +240,6 @@ nav .top .time h6 {
     font-family: "Raleway-medium";
     letter-spacing: 0.055rem;
     font-size: 0.75rem;
-    color: var(--ternary);
 }
 
 nav .top .nav_contact img,
@@ -249,7 +253,7 @@ nav .top .time img {
 }
 
 .navbar .container {
-    justify-content: center;
+    justify-content: space-evenly;
 }
 
 .justify-center {
@@ -413,10 +417,6 @@ nav .dropdown:hover ul {
 nav .dropdown ul li {
     float: none;
     width: 100%;
-}
-
-.dropdown {
-    padding: 2px;
 }
 
 .dropdown:hover {
