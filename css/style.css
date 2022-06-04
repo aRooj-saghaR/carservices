@@ -707,71 +707,6 @@ nav .dropdown ul li {
     box-shadow: 0px 0px 10px 10px rgb(0 0 0 / 15%);
 }
 
-@media only screen and (max-width: 475px) {
-    .h_heading_1 {
-        font-size: 2.5rem;
-        margin-top: 30px;
-        line-height: 35px;
-        font-weight: bolder !important;
-    }
-    .big-heading-banner-2 {
-        font-size: 2rem;
-        line-height: 35px;
-    }
-    /* @media only screen and (max-width: 575px) */
-    .timer_container ul li {
-        min-width: 50px;
-        width: 100%;
-        font-size: 0.7rem;
-    }
-    section.big-deal .timer div {
-        width: 60px !important;
-        height: 60px !important;
-    }
-    section.big-deal .timer div span:last-child {
-        margin-bottom: -42px !important;
-        color: var(--footer_bg) !important;
-        font-weight: bold !important;
-    }
-    section.big-deal .timer div span:first-child {
-        padding-bottom: 15px !important;
-    }
-    .hero .custom_btn {
-        margin-top: 35px;
-        padding: 5px 25px !important;
-        font-size: 30px;
-    }
-    section.big-deal .timer {
-        margin-top: 30px !important;
-    }
-    .para1,
-    .para2 {
-        padding: 5px 24px;
-        font-weight: 600;
-        margin-top: 12px !important;
-        font-size: 17px !important;
-    }
-    .coupen_code {
-        font-weight: 600;
-    }
-    .no-gutters>.col,
-    .no-gutters>[class*=col-] {
-        padding-right: 5px;
-        padding-left: 5px;
-    }
-    .hero_wrapper .mt-5,
-    .my-5 {
-        margin-top: 1rem!important;
-    }
-    .hero {
-        padding-bottom: 0px !important;
-    }
-    .about {
-        padding-top: 0px;
-        padding-bottom: 15px;
-    }
-}
-
 
 /****************** About Section *******************/
 
@@ -1845,3 +1780,152 @@ footer {
 
 
 /***********************************************************************************/
+
+@media only screen and (max-width: 475px) {
+    .h_heading_1 {
+        font-size: 2.5rem;
+        margin-top: 30px;
+        line-height: 35px;
+        font-weight: bolder !important;
+    }
+    .big-heading-banner-2 {
+        font-size: 2rem;
+        line-height: 35px;
+    }
+    /* @media only screen and (max-width: 575px) */
+    .timer_container ul li {
+        min-width: 50px;
+        width: 100%;
+        font-size: 0.7rem;
+    }
+    section.big-deal .timer div {
+        width: 60px !important;
+        height: 60px !important;
+    }
+    section.big-deal .timer div span:last-child {
+        margin-bottom: -42px !important;
+        color: var(--footer_bg) !important;
+        font-weight: bold !important;
+    }
+    section.big-deal .timer div span:first-child {
+        padding-bottom: 15px !important;
+    }
+    .hero .custom_btn {
+        margin-top: 35px;
+        padding: 5px 25px !important;
+        font-size: 30px;
+    }
+    section.big-deal .timer {
+        margin-top: 30px !important;
+    }
+    .para1,
+    .para2 {
+        padding: 5px 24px;
+        font-weight: 600;
+        margin-top: 12px !important;
+        font-size: 17px !important;
+    }
+    .coupen_code {
+        font-weight: 600;
+    }
+    .no-gutters>.col,
+    .no-gutters>[class*=col-] {
+        padding-right: 5px;
+        padding-left: 5px;
+    }
+    .hero_wrapper .mt-5,
+    .my-5 {
+        margin-top: 1rem!important;
+    }
+    .hero {
+        padding-bottom: 0px !important;
+    }
+    .about {
+        padding-top: 0px;
+        padding-bottom: 15px;
+    }
+    .about h2 {
+        font-size: 35px;
+        line-height: 35px;
+    }
+    .about .about_img {
+        padding-top: 20px;
+        padding-bottom: 30px;
+    }
+    .about h4 {
+        font-weight: 600;
+        line-height: 35px;
+        font-size: 24px;
+        padding-top: 12px;
+        padding-bottom: 12px;
+    }
+    .carousel-nav {
+        width: 100%;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .carousel-nav a {
+        padding: 13px;
+    }
+    .working .mt-5 {
+        margin-top: 1.5rem!important;
+    }
+    .header-wrapper h3 {
+        font-size: 1.2rem;
+    }
+    .tab-link-container ul {
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+    }
+    .tab-link-container ul li {
+        width: 48%;
+        margin: 2px;
+    }
+    .nav-tabs .nav-item {
+        margin-bottom: 0px;
+    }
+    .tab-link-container ul li:first-child button {
+        border-top-left-radius: 0px;
+        border-bottom-left-radius: 0px;
+    }
+    .services {
+        margin-top: 50px;
+        padding-top: 5px;
+        padding-bottom: 80px;
+    }
+    .services .single_service_wrapper {
+        margin-top: 2.5rem !important;
+    }
+    #accordion.py-5 {
+        padding-top: 1rem!important;
+    }
+    section.subscribe {
+        height: 385px;
+        margin-top: 105px !important;
+    }
+    section.subscribe .container {
+        text-align: center;
+    }
+    section.subscribe .container>div:first-child img {
+        width: 95%;
+    }
+    section.subscribe h1 {
+        font-size: 1.3rem;
+        margin-top: 30px;
+    }
+    section.subscribe .input-wrap {
+        padding: 0rem !important;
+    }
+    .links_design {
+        font-size: 15px;
+    }
+    .footer .subscribe-form .form-group .submit {
+        width: 100px;
+        margin-top: 4px;
+        height: 45px;
+        font-size: 12px;
+    }
+}
