@@ -707,6 +707,71 @@ nav .dropdown ul li {
     box-shadow: 0px 0px 10px 10px rgb(0 0 0 / 15%);
 }
 
+@media only screen and (max-width: 475px) {
+    .h_heading_1 {
+        font-size: 2.5rem;
+        margin-top: 30px;
+        line-height: 35px;
+        font-weight: bolder !important;
+    }
+    .big-heading-banner-2 {
+        font-size: 2rem;
+        line-height: 35px;
+    }
+    /* @media only screen and (max-width: 575px) */
+    .timer_container ul li {
+        min-width: 50px;
+        width: 100%;
+        font-size: 0.7rem;
+    }
+    section.big-deal .timer div {
+        width: 60px !important;
+        height: 60px !important;
+    }
+    section.big-deal .timer div span:last-child {
+        margin-bottom: -42px !important;
+        color: var(--footer_bg) !important;
+        font-weight: bold !important;
+    }
+    section.big-deal .timer div span:first-child {
+        padding-bottom: 15px !important;
+    }
+    .hero .custom_btn {
+        margin-top: 35px;
+        padding: 5px 25px !important;
+        font-size: 30px;
+    }
+    section.big-deal .timer {
+        margin-top: 30px !important;
+    }
+    .para1,
+    .para2 {
+        padding: 5px 24px;
+        font-weight: 600;
+        margin-top: 12px !important;
+        font-size: 17px !important;
+    }
+    .coupen_code {
+        font-weight: 600;
+    }
+    .no-gutters>.col,
+    .no-gutters>[class*=col-] {
+        padding-right: 5px;
+        padding-left: 5px;
+    }
+    .hero_wrapper .mt-5,
+    .my-5 {
+        margin-top: 1rem!important;
+    }
+    .hero {
+        padding-bottom: 0px !important;
+    }
+    .about {
+        padding-top: 0px;
+        padding-bottom: 15px;
+    }
+}
+
 
 /****************** About Section *******************/
 
