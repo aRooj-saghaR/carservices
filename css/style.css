@@ -998,7 +998,7 @@ section.big-deal .timer div span:last-child {
     margin: 4px;
 }
 
-.owl-1 .owl-dots .owl-dot.active>span {
+.owl-1 .owl-dots .owl-dot.active_work>span {
     background: white;
 }
 
@@ -1167,11 +1167,11 @@ section.big-deal .timer div span:last-child {
     color: #000;
 }
 
-.carousel-nav a.active {
+.carousel-nav a.active_work {
     color: #000;
 }
 
-.carousel-nav a.active:before {
+.carousel-nav a.active_work:before {
     content: "";
     bottom: -1px;
     left: 0;
@@ -1782,6 +1782,10 @@ footer {
 /***********************************************************************************/
 
 @media only screen and (max-width: 475px) {
+    .mobile-logo img {
+        height: 80px;
+        width: 150px;
+    }
     .h_heading_1 {
         font-size: 2.5rem;
         margin-top: 30px;
@@ -1848,8 +1852,11 @@ footer {
         font-size: 35px;
         line-height: 35px;
     }
+    .about p {
+        font-size: 15px;
+    }
     .about .about_img {
-        padding-top: 20px;
+        padding-top: 40px;
         padding-bottom: 30px;
     }
     .about h4 {
@@ -1867,11 +1874,35 @@ footer {
     .carousel-nav a {
         padding: 13px;
     }
+    .working {
+        padding: 18px 0 0 0;
+    }
     .working .mt-5 {
         margin-top: 1.5rem!important;
     }
     .header-wrapper h3 {
         font-size: 1.2rem;
+    }
+    .media-29101 .text {
+        padding: 25px 5px 10px 5px;
+    }
+    .working_item .text-wrapper h3 {
+        font-size: 18px;
+    }
+    .working_item .text-wrapper p {
+        font-size: 14px;
+    }
+    .working h4 {
+        font-size: 14px;
+    }
+    .search-wrapper input {
+        width: 130px;
+    }
+    .search-wrapper button {
+        width: 100px;
+    }
+    .owl-carousel .owl-item img {
+        display: none;
     }
     .tab-link-container ul {
         -ms-flex-wrap: wrap;
@@ -1920,7 +1951,7 @@ footer {
         padding: 0rem !important;
     }
     .links_design {
-        font-size: 15px;
+        font-size: 13px;
     }
     .footer .subscribe-form .form-group .submit {
         width: 100px;
