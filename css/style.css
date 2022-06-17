@@ -602,7 +602,7 @@ nav .dropdown ul li {
 
 .custom_btn {
     background-color: var(--primary);
-    color: white;
+    color: var(--heaven);
     font-weight: 600;
     text-transform: uppercase;
     border-radius: 15px;
@@ -615,7 +615,7 @@ nav .dropdown ul li {
 
 .custom_btn:hover {
     box-shadow: 0px 20px 40px rgb(0 0 0 / 40%);
-    color: white;
+    color: var(--heaven);
 }
 
 .each_icon {
@@ -625,7 +625,7 @@ nav .dropdown ul li {
     border-radius: 10px;
     max-width: 130px;
     transition: box-shadow 0.3s ease-in, transform 0.3s ease-in, -webkit-box-shadow 0.3s ease-in, -webkit-transform 0.3s ease-in;
-    background-color: white;
+    background-color: var(--heaven);
 }
 
 .each_icon .icon_container {
@@ -669,7 +669,7 @@ nav .dropdown ul li {
 .comming_soon .text {
     top: 10px;
     background-color: var(--primary);
-    color: white;
+    color: var(--heaven);
     position: absolute;
     left: 50%;
     width: 90px;
@@ -790,7 +790,7 @@ nav .dropdown ul li {
 
 .custom_btn.unfilled:hover {
     background-color: var(--primary);
-    color: white;
+    color: var(--heaven);
 }
 
 
@@ -816,7 +816,7 @@ nav .dropdown ul li {
     box-shadow: 0px 0px 10px 0px rgb(0 0 0 / 15%);
     padding: 15px 10px;
     border-radius: 15px;
-    background-color: white;
+    background-color: var(--heaven);
     max-width: 250px;
     margin: 0px auto;
     padding-top: 30px;
@@ -999,7 +999,7 @@ section.big-deal .timer div span:last-child {
 }
 
 .owl-1 .owl-dots .owl-dot.active_work>span {
-    background: white;
+    background: var(--heaven);
 }
 
 .owl-1 .owl-dots .owl-dot:active,
@@ -1041,7 +1041,7 @@ section.big-deal .timer div span:last-child {
     width: 100%;
     margin-top: 20px;
     border-radius: 40px;
-    background: white;
+    background: var(--heaven);
     box-shadow: 0 4px 20px -2px #e9e9e9;
 }
 
@@ -1203,7 +1203,7 @@ section.big-deal .timer div span:last-child {
 
 .tab-link-container ul li.active_nav button {
     background-color: var(--danger);
-    color: white;
+    color: var(--heaven);
     border-color: black;
 }
 
@@ -1228,7 +1228,7 @@ button:not(:disabled) {
 }
 
 .tab-link-container ul li.active_nav button .itemText {
-    color: white;
+    color: var(--heaven);
 }
 
 .tab-link-container ul li button .itemText {
@@ -1253,7 +1253,7 @@ button:not(:disabled) {
     height: 100px;
     max-width: 150px;
     display: block;
-    background-color: white;
+    background-color: var(--heaven);
     box-shadow: 0px 0px 10px 0px rgb(0 0 0 / 10%);
     border-radius: 15px;
     line-height: 150px;
@@ -1620,7 +1620,7 @@ section.subscribe .input-wrap button:hover {
 /* --------- Footer -----------*/
 
 footer {
-    padding: 5em 0;
+    padding: 5em 0 1em 0;
     bottom: 0;
 }
 
@@ -1629,7 +1629,7 @@ footer {
 }
 
 .footer .footer-heading {
-    font-size: 19px;
+    /* font-size: 19px; */
     color: var(--footer_heading);
     margin-bottom: 20px;
 }
@@ -1640,7 +1640,7 @@ footer {
 }
 
 .footer a {
-    color: var(--footer_Y_text);
+    color: var(--footer_links);
 }
 
 .footer p {
@@ -1761,7 +1761,7 @@ footer {
 }
 
 .footer .partner-wrap .partner-name a span {
-    color: white;
+    color: var(--heaven);
 }
 
 .footer .partner-wrap .btn-custom {
@@ -1770,6 +1770,103 @@ footer {
 
 .footer .border-left {
     border-color: var(--border_color) !important;
+}
+
+.footer-main-wrapper .footer-heading {
+    position: relative;
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+}
+
+.footer-main-wrapper .footer-heading:before {
+    content: ' ';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: var(--heaven) !important;
+    height: 1px;
+}
+
+.footer-main-wrapper .footer-heading h3 {
+    font-size: 18px !important;
+    font-weight: 600;
+    color: var(--heaven);
+}
+
+.footer-main-wrapper .footer-content .social-media-navigation {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-main-wrapper .footer-content .social-media-navigation li {
+    display: inline-block;
+    width: 40px;
+    text-align: center;
+}
+
+.footer-main-wrapper .footer-content .social-media-navigation li a {
+    display: block;
+    width: 100%;
+    width: 30px;
+    height: 30px;
+    background-color: var(--heaven) !important;
+    border-radius: 100%;
+    -webkit-transition: background-color 0.3s ease-in;
+    transition: background-color 0.3s ease-in;
+}
+
+.call_now_btn_custom {
+    width: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+    height: auto;
+}
+
+.call_now_btn_custom {
+    display: inline-block;
+    height: 40px;
+    width: 160px;
+    text-align: center;
+    line-height: 40px;
+    background-color: var(--danger);
+    color: var(--heaven) !important;
+    font-size: 1.2rem;
+    font-weight: 600;
+    border-radius: 5px;
+    position: relative;
+}
+
+.footer-main-wrapper .footer-content .footer-navigation {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-main-wrapper .footer-content .footer-navigation li {
+    display: inline-block;
+    width: 100%;
+    padding: 2px 0px;
+    color: var(--heaven);
+    font-size: 0.8rem;
+}
+
+.footer-main-wrapper .footer-content .social-media-navigation li a:hover {
+    background-color: #ce1126 !important;
+    color: var(--heaven) !important;
+}
+
+.footer-main-wrapper .footer-content .footer-navigation li:hover a {
+    color: var(--heaven) !important;
+}
+
+.col.mt-1.mb-3.pb {
+    margin-top: -10px !important;
+}
+
+.footer-main-wrapper .footer-content p {
+    margin-bottom: 0px !important;
 }
 
 @media (max-width: 1199.98px) {
@@ -1953,10 +2050,24 @@ footer {
     .links_design {
         font-size: 13px;
     }
+    .footer p {
+        text-align: center;
+    }
+    .footer .partner-wrap p {
+        padding-top: 12px;
+    }
     .footer .subscribe-form .form-group .submit {
         width: 100px;
         margin-top: 4px;
         height: 45px;
         font-size: 12px;
+    }
+    .footer .partner-wrap h3 {
+        text-align: center;
+        padding-bottom: 10px;
+    }
+    .footer .list-unstyled a {
+        font-size: 14px;
+        padding: 5px;
     }
 }
