@@ -816,9 +816,11 @@ nav .dropdown ul li {
 /****************** Service Section *******************/
 
 .services {
-    margin-top: 80px;
-    padding-top: 40px;
-    padding-bottom: 80px;
+    /* margin-top: 80px; */
+    padding: 20px 0px;
+}
+.services .service-heading{
+    margin: 20px 0;
 }
 
 .each_service .icon_image_wrapper {
@@ -836,7 +838,7 @@ nav .dropdown ul li {
 }
 
 .each_service .text_container h4 {
-    margin-top: 10px;
+    margin: 10px;
     color: black;
     font-weight: 400;
 }
@@ -1288,7 +1290,8 @@ section.big-deal .timer div span:last-child {
     text-align: center;
 }
 
-.tab-link-container ul li.active_nav button {
+.tab-link-container ul li.active_nav button,
+.tab-link-container ul li.active_nav button:hover {
     background-color: var(--danger);
     color: var(--heaven);
     border-color: black;
@@ -1316,6 +1319,9 @@ button:not(:disabled) {
 
 .tab-link-container ul li.active_nav button .itemText {
     color: var(--heaven);
+}
+.tab-link-container ul li.active_nav button .itemText:hover{
+    background-color: var(--danger);
 }
 
 .tab-link-container ul li button .itemText {
@@ -1390,6 +1396,7 @@ button:not(:disabled) {
     background-size: cover;
     padding: 50px 0;
     font-family: var(--font-family);
+    background-color: var(--heaven);
 }
 
 .testimonials .owl-carousel {
@@ -1404,7 +1411,7 @@ button:not(:disabled) {
     left: 0;
     top: 0;
     bottom: 0;
-    background: var(--bg_gray);
+    background-color: var(--heaven);
 }
 
 .testimonials .title {
@@ -1518,7 +1525,8 @@ button:not(:disabled) {
 }
 
 .faq {
-    background-color: var(--bg-white);
+    background-color: var(--bg_gray);
+    padding-bottom: 40px;
 }
 
 #accordion .card-header {
@@ -1564,6 +1572,7 @@ button:not(:disabled) {
 }
 
 #accordion .accordion-body {
+    background-color: var(--heaven);
     padding: 40px 55px;
 }
 
@@ -1589,7 +1598,6 @@ button:not(:disabled) {
 
 .faq-body {
     background-color: var(--bg_gray);
-    margin-bottom: 10px;
 }
 
 
@@ -1598,8 +1606,9 @@ button:not(:disabled) {
 section.subscribe {
     background: var(--secondary);
     height: 400px;
-    margin-top: 40px !important;
-    margin-bottom: 80px !important;
+    /* margin-top: 40px !important; */
+    padding: 40px 0px !important;
+    padding-top: 50px !important;
 }
 
 .subscribe .container {
@@ -1608,7 +1617,7 @@ section.subscribe {
 
 section.subscribe .container>div:first-child img {
     width: 90%;
-    margin-top: -123px;
+    margin-top: -195px;
 }
 
 section.subscribe .container div:first-child {
@@ -1685,6 +1694,7 @@ section.subscribe .input-wrap button:hover {
 
 .contact {
     background-color: var(--bg_gray);
+    padding: 20px 0px;
 }
 
 .links_design i {
@@ -1834,6 +1844,15 @@ footer {
     padding: 1em 0;
 }
 
+.footer .footer-info{
+    color: var(--heaven) !important;
+    opacity: 0.5;
+}
+.footer .fi-con:hover{
+    color: var(--heaven) !important;
+    opacity: 1;
+}
+
 .footer .partner-wrap h3 {
     font-size: 14px;
     color: rgba(255, 255, 255, 0.4);
@@ -1935,7 +1954,7 @@ footer {
     width: 100%;
     padding: 2px 0px;
     color: var(--heaven);
-    font-size: 0.8rem;
+    font-size: 1rem;
 }
 
 .footer-main-wrapper .footer-content .social-media-navigation li a:hover {
@@ -1943,8 +1962,14 @@ footer {
     color: var(--heaven) !important;
 }
 
+.footer-main-wrapper .footer-content .footer-navigation li a {
+    color: var(--heaven) !important;
+    opacity: 0.5;
+}
+
 .footer-main-wrapper .footer-content .footer-navigation li:hover a {
     color: var(--heaven) !important;
+    opacity: 1;
 }
 
 .col.mt-1.mb-3.pb {
@@ -1953,6 +1978,11 @@ footer {
 
 .footer-main-wrapper .footer-content p {
     margin-bottom: 0px !important;
+}
+
+.imageWrapper-footer{
+    padding: 0px 5px;
+    width: 100%;
 }
 
 @media (max-width: 1199.98px) {
