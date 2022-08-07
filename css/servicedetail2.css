@@ -1,0 +1,477 @@
+/* fonts  */
+
+@font-face {
+    font-family: "Raleway-regular";
+    src: url(../fonts/Raleway-Regular.ttf)
+}
+
+@font-face {
+    font-family: "Raleway-medium";
+    src: url(../fonts/Raleway-Medium.ttf)
+}
+
+@font-face {
+    font-family: "Raleway-bold";
+    src: url(../fonts/Raleway-Bold.ttf)
+}
+
+@font-face {
+    font-family: "Raleway-extrabold";
+    src: url(../fonts/Raleway-ExtraBold.ttf)
+}
+
+@font-face {
+    font-family: "Raleway-semibold";
+    src: url(../fonts/Raleway-SemiBold.ttf)
+}
+
+@font-face {
+    font-family: "Raleway-black";
+    src: url(../fonts/Raleway-Black.ttf)
+}
+
+
+/* colors  */
+
+:root {
+    --primary: #FC2843;
+    --secondary: #1F2227;
+    --ternary: #B26164;
+    --bg_gray: #F2F2F2;
+    --danger: #FE4545;
+    --pure: #FEFEFE;
+    --light: #F0F0F0;
+    --heaven: #FFFFFF;
+    --footer_bg: #1F2227;
+    --footer_links: rgba(255, 255, 255, 0.3);
+    --footer_links_hover: #fff;
+    --footer_btn_bg: #FC2843;
+    --footer_Y_text: #FC2843;
+    --footer_heading: rgba(255, 255, 255, 0.9);
+    --footer_logo: #FC2843;
+    --footer_input: rgba(0, 0, 0, 0.3);
+    --border_color: rgba(255, 255, 255, 0.05);
+    --font-family: 'Montserrat', sans-serif;
+    --font_bold: "Raleway-bold";
+    --font_extrabold: "Raleway-extrabold";
+    --font_semibold: "Raleway-semibold";
+}
+
+
+/* Reset  */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /* font-family: var(--font-family) !important; */
+}
+
+a {
+    text-decoration: none !important;
+}
+
+body {
+    -webkit-font-smoothing: antialiased;
+    font-family: "Raleway-regular";
+}
+
+.min1200 {
+    min-width: 1200px;
+}
+
+.max1200 {
+    max-width: 1200px;
+}
+.bolder-text {
+    font-weight: 900 !important;
+}
+.big-text {
+    font-size: 1.6rem !important;
+}
+.list_design li {
+    margin-bottom: 5px;
+    display: block;
+}
+.list_design .icon_block {
+    width: 20px;
+    min-width: 20px;
+}
+.list_design .point_block {
+    display: block;
+}
+.input_wrapper_n {
+    display: block;
+    position: relative;
+    border: 1px solid #ddd;
+    background-color: white;
+    border-radius: 10px;
+}
+.input_wrapper_n span img {
+    max-height: 20px;
+    max-width: 20px;
+}
+.input_wrapper_n span {
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    left: 10px;
+    width: 20px;
+    height: 20px;
+    z-index: 22;
+    line-height: 20px;
+}
+.input_wrapper_n input {
+    width: 100%;
+    display: block;
+    outline: none;
+    border: none;
+    padding: 10px 15px;
+    background-color: transparent;
+    padding-left: 40px;
+}
+[type=submit]:not(:disabled), button:not(:disabled) {
+    cursor: pointer;
+}
+
+.inpt_btn {
+    padding: 10px;
+    display: block;
+    width: 100%;
+    line-height: 20px;
+    border: 1px solid #0FB943;
+    background-color: #0FB943;
+    color: white;
+    font-weight: 600;
+    border-radius: 10px;
+}
+
+
+
+.card_container_n_outer {
+    position: relative;
+}
+
+.border_radius_10 {
+    border-radius: 10px !important;
+}
+.card_container_n_outer::before {
+    background-image: url(https://resources.servicemycar.com/public/assets/car-battery-replacement/imgs/Pattern.png);
+    background-repeat: repeat;
+    background-size: cover;
+    z-index: 11;
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+}
+.bg_primary {
+    background-color: #0FB943 !important;
+}
+.bg_light {
+    background-color: #f2f2f2 !important;
+}
+.card_container_n .card-design-wrap .card-design {
+    position: relative;
+    display: block;
+    height: 250px;
+    z-index: 22;
+}
+.card_container_n .card-design-wrap .card-design .desc_wrap {
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    width: 100%;
+    left: 0px;
+    z-index: 99;
+    text-align: center;
+    color: white;
+}
+.card_container_n .card-design-wrap .card-design .desc_wrap h3 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin: 0px;
+}
+.card_container_n .card-design-wrap .card-design .desc_wrap p {
+    font-size: 1rem;
+    font-weight: 400;
+    margin: 0px;
+    color: white;
+}
+
+.desc_wrap p {
+    font-weight: 600 !important;
+}
+.card_container_n .card-design-wrap .card-design .img_wrap {
+    height: 150px;
+}
+.card_container_n .card-design-wrap .card-design img {
+    max-height: 150px;
+    -o-object-fit: cover;
+    object-fit: cover;
+}
+.card_container_n .card-design-wrap .card-design .color-dark h3, .card_container_n .card-design-wrap .card-design .color-dark p {
+    color: black !important;
+}
+
+
+
+.bg_service_my_car {
+    background-color: white !important;
+}
+
+.text-uppercase {
+    text-transform: uppercase;
+}
+.bold-text {
+    font-weight: 600 !important;
+}
+.each_how_to_book {
+    max-width: 200px;
+    display: block;
+    margin: 0px auto;
+    margin-top: 40px;
+}
+.each_how_to_book .icon_container img {
+    max-height: 60px;
+    max-width: 80px;
+}
+.each_how_to_book .text_container {
+    margin-top: 40px;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+}
+.each_how_to_book .text_container h4 {
+    font-size: 1rem;
+    color: black;
+    font-weight: 600;
+    margin: 0px;
+}
+.each_how_to_book .text_container p {
+    font-size: 0.8rem;
+    color: black;
+    font-weight: 400;
+}
+.each_how_to_book.border_design_1:after, .each_how_to_book.border_design_2:after {
+    position: absolute;
+    content: " ";
+    height: 100%;
+    width: 70%;
+    top: 50%;
+    left: 65%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.each_how_to_book.border_design_2:after {
+    bottom: 0px;
+    -webkit-transform: unset;
+    transform: unset;
+}
+.border_design_1:after {
+    background-image: url(https://resources.servicemycar.com/public/assets/service-page/line/SVG/Line_1.svg);
+}
+.border_design_2:after {
+    background-image: url(https://resources.servicemycar.com/public/assets/service-page/line/SVG/Line_2.svg);
+}
+.bg_gray_container{
+    background-color: #f2f2f2;
+}
+
+
+.each_feat {
+    margin: 10px 0px 20px 0px;
+}
+.each_feat .image_wrapper {
+    display: block;
+    height: 60px;
+    width: 60px;
+    line-height: 60px;
+    text-align: center;
+    display: block;
+    margin: 0px auto;
+}
+.each_feat .image_wrapper img {
+    line-height: 60px;
+    display: inline-block;
+}
+
+.each_feat .image_wrapper img {
+    max-height: 60px;
+    max-width: 60px;
+    display: block;
+    margin: 0px auto;
+}
+.each_feat .desc h3 {
+    font-weight: 400;
+    font-size: 1rem;
+}
+.default_style {
+    white-space: pre-line;
+}
+.color-white {
+    color: #ffffff !important;
+}
+.desc_design h3:first-child {
+    margin-top: 0px;
+}
+
+.desc_design h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #0FB943;
+    margin-top: 30px;
+}
+.desc_design p {
+    font-size: 0.9rem;
+    margin-bottom: 30px;
+}
+
+
+.bg_service_my_car {
+    background-color: white !important;
+}
+.why_choose_section {
+    position: relative;
+    padding: 0px 20px;
+}
+.why_choose_section .icon_container {
+    max-height: 100px;
+}
+.why_choose_section .icon_container img {
+    max-height: 100px;
+}
+.why_choose_section .text_container {
+    margin-top: 20px;
+}
+.why_choose_section:after {
+    content: " ";
+    right: 0px;
+    height: 100px;
+    border: 1px solid #f2f2f2;
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+.small-text {
+    font-size: 0.8rem !important;
+}
+
+
+.owl-theme .owl-nav {
+    position: absolute;
+    top: -60px;
+    left: 0;
+    right: 0;
+}
+.owl-theme .owl-nav .owl-prev {
+    right: 30px;
+}
+
+.owl-theme .owl-nav .owl-prev, .owl-theme .owl-nav .owl-next {
+    position: absolute;
+    height: 50px;
+    width: 30px;
+    background-color: transparent;
+    color: black;
+    border: 1px solid white;
+    border-radius: 0px;
+    z-index: 100;
+    outline: none;
+}
+.owl-theme .owl-nav.disabled + .owl-dots {
+    margin-top: 0px !important;
+}
+
+.owl-theme .owl-nav.disabled + .owl-dots {
+    margin-top: 0px;
+    line-height: 0;
+}
+.owl-theme .owl-dots .owl-dot.active span {
+    opacity: 1;
+    width: 10px;
+    height: 10px;
+}
+.owl-theme .owl-dots .owl-dot span {
+    width: 10px;
+    height: 10px;
+    margin: 5px 7px;
+    background: #D6D6D6;
+    display: block;
+    transition: opacity .2s ease;
+    border-radius: 30px;
+}
+.customer_reviews .each_review .image_wrapper {
+    height: 94px;
+    width: 94px;
+    display: block;
+    margin: 0px auto;
+    border: 2px solid #0FB943;
+    border-radius: 100%;
+}
+.customer_reviews .each_review .image_wrapper img {
+    height: 90px;
+    width: 90px;
+    -o-object-fit: cover;
+    object-fit: cover;
+    border-radius: 100%;
+}
+.customer_reviews .each_review .desc {
+    margin-top: 30px;
+  }
+  .customer_reviews .each_review .desc .name {
+    font-weight: 600;
+    color: black;
+    font-size: 1.2rem;
+  }
+  
+  .customer_reviews .each_review .desc .rating {
+    color: #f79028;
+    font-size: 1.2rem;
+  }
+  
+  .customer_reviews .each_review .desc .text {
+    margin-top: 20px;
+    font-size: 0.9rem;
+    color: #555;
+  }
+  .points_container_new ul{
+    display: flex;
+    flex-wrap: wrap;
+}
+  .points_container_new li{
+    width: 50%;
+    padding: 5px 10px;
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+    font-weight: 600;
+    margin-top: 10px;
+  }
+  .points_container_new .tickmark1{
+    color: #0FB943;
+    font-size: 1.5rem;
+    display: inline-block;
+    margin-right: 5px;
+}
+.points_container_new .tickmark{
+    display: inline-block;
+    height: 24px;
+    width: 30px;
+    min-width: 30px;
+    margin-right: 5px;
+    background-position: -96px -14px;
+    background-repeat: no-repeat;
+    background-size: 180px 125px
+}
+.points_container_new .tickmark i{
+    display: none;
+}
+
