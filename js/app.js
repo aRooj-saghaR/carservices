@@ -55,6 +55,41 @@ $('.testi.owl-carousel').owlCarousel({
     }
 });
 
+$(document).ready(function(){
+    $('.blogs_carousel_design_2 .owl-carousel').owlCarousel({
+    loop:true,
+    margin:0,
+    smartSpeed: 1000,
+    autoplay:true,
+    rewindNav:false,
+    rewindSpeed: 0 ,
+    autoplayTimeout:6000,
+    autoplayHoverPause:true,
+    nav:false,
+    dots : true,
+    items:2,
+    responsive:{
+        0:{
+            items:1
+        },
+        575:{
+            items:1.5
+        },
+        768:{
+            items:2
+        },
+        1200:{
+            items:2
+        }
+    }
+});
+})
+
+$(".toggleHiddenFields").click(function(){
+    let parentDiv = $(this).parent(".allCarsList1");
+    parentDiv.children('li:nth-child(n+10)').not(this).toggle();
+    $(this).toggleText("Show More", "Show Less");
+ })
 
 
 
