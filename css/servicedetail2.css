@@ -526,3 +526,127 @@ body {
     transition: opacity .2s ease;
     border-radius: 30px;
 }
+
+
+
+
+
+.points_container_new ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+.points_container_new li {
+    width: 50%;
+    padding: 5px 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    font-size: 1rem;
+    font-weight: 600;
+    margin-top: 10px;
+}
+.small-text {
+    font-size: 0.8rem !important;
+}
+.points_container_new li .tickmark {
+    display: inline-block;
+    height: 24px;
+    width: 30px;
+    min-width: 30px;
+    margin-right: 5px;
+    background-position: -96px -14px;
+    background-repeat: no-repeat;
+    background-size: 180px 125px;
+}
+
+.tickmark {
+    background-image: url(https://resources.servicemycar.com/public/assets/mobile-car-service-design/n1/Icon-pack.svg);
+}
+.tickmark a{
+    text-decoration: none;
+    color: inherit;
+}
+.light-text {
+    font-weight: 400 !important;
+}
+.allCarsList1 li:nth-child(n+10) {
+    display: none;
+}
+.points_container_new li {
+    list-style: none;
+    width: 50%;
+    padding: 5px 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    font-size: 1rem;
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+.text-underline {
+    text-decoration: underline;
+    line-height: 20px;
+    cursor: pointer;
+}
+.primary-color {
+    color: #0FB943 !important;
+}
+
+.normal-text {
+    font-size: 1rem !important;
+}
+.bolder-text{
+    font-weight: bolder !important;
+} 
+.max_height_400 {
+    max-height: 400px;
+}
+
+
+@media only screen and (max-width: 575px){
+    .big-text {
+        padding-top: 30px;
+        font-size: 1.2rem !important;
+    }   
+    .each_how_to_book.border_design_1:after, .each_how_to_book.border_design_2:after {
+        position: absolute;
+        display: none;
+        content: " ";
+        height: 100%;
+        width: 70%;
+        top: 50%;
+        left: 65%;
+        -webkit-transform: translateY(-50%);
+        transform: translateY(-50%);
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+    .each_feat .desc h3 {
+        font-size: 0.7rem;
+    }
+    .testimonials .owl-carousel {
+        margin-top: 0px;
+    }
+}
+
+@media only screen and (max-width: 800px){
+    .min1200 {
+        min-width: auto;
+    }
+}
+
+@media only screen and (max-width: 767px){
+    .card_container_n .card-design-wrap .card-design {
+        height: 250px;
+    }
+}

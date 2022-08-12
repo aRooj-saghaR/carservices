@@ -85,6 +85,35 @@ $(document).ready(function(){
 });
 })
 
+$(document).ready(function(){
+    $('.why_choose_us_carousel .owl-carousel').owlCarousel({
+    loop:false,
+    margin:0,
+    smartSpeed: 1000,
+    autoplay:true,
+    rewind: true,
+    autoplayTimeout:6000,
+    autoplayHoverPause:true,
+    nav:false,
+    dots : true,
+        items:2,
+    responsive:{
+        0:{
+            items:1.2
+        },
+        575:{
+            items:2.1
+        },
+        768:{
+            items:2.5
+        },
+        1200:{
+            items:3
+        }
+    }
+});
+})
+
 $(".toggleHiddenFields").click(function(){
     let parentDiv = $(this).parent(".allCarsList1");
     parentDiv.children('li:nth-child(n+10)').not(this).toggle();
