@@ -758,7 +758,7 @@ nav .dropdown ul li {
 
 .offer_text {
     font-size: 2rem;
-    color: #0FB943;
+    color: var(--primary);
     font-weight: 600;
 }
 
@@ -771,7 +771,7 @@ nav .dropdown ul li {
     height: 90%;
     width: 4px;
     position: absolute;
-    background-color: #0FB943;
+    background-color: var(--primary);
     top: 50%;
     left: -50px;
     -webkit-transform: translateY(-50%);
@@ -803,7 +803,7 @@ nav .dropdown ul li {
     font-weight: 400;
     left: 0;
     top: 0px;
-    color: #0FB943;
+    color: var(--primary);
     font-size: 1.2rem;
 }
 
@@ -845,6 +845,9 @@ nav .dropdown ul li {
 
 .each_service a {
     transition: all 0.3s;
+    COLOR: BLACK;
+    FONT-WEIGHT: 600;
+    font-size: 20px;
 }
 
 .each_service a:hover {
